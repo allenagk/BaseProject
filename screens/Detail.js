@@ -3,13 +3,10 @@ import { View, Text, Button, StyleSheet } from "react-native";
 import colors from "../constants/colors";
 
 
-
-const FindLocation = ({ navigation }) => {
-  console.log(navigation);
+const Detail = ({ navigation }) => {
     return (
         <View style={styles.screen}>
-        <Text>FindLocation</Text>
-        <Button title="Click me" onPress={() => navigation.navigate('Detail')}></Button>
+        <Text>Detail</Text>
 
       </View>
     );
@@ -24,4 +21,4 @@ const FindLocation = ({ navigation }) => {
     },
   });
 
-  export default FindLocation;
+  export default Detail;

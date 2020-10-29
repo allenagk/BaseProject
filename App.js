@@ -8,6 +8,8 @@ import colors from "./constants/colors";
 
 import HomeScreen from "./screens/HomeScreen";
 import FindLocation from "./screens/FindLocation";
+import Detail from "./screens/Detail";
+
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -25,6 +27,11 @@ function MyStack() {
         />
         <Stack.Screen name="FindLocation" 
         component={FindLocation}
+        options={{ 
+          title: '', 
+          }} />
+        <Stack.Screen name="Detail" 
+        component={Detail}
         options={{ 
           title: '', 
           }} />
